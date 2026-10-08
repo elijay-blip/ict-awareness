@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ICT Awareness</title>
+<style>
+:root{
+  color-scheme:light;
+  --ink:#34325a; --bg:#f1eeff; --grid:#ddd6fb;
+  --mint:#bff3e4; --lav:#d9ceff; --pink:#ffd1e6; --sky:#c3e5ff; --peach:#ffe3c9; --lemon:#fff6bf;
+  --link:#4b3fc4;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{
+  margin:0;color:var(--ink);background-color:var(--bg);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:28px 28px;
+  font-family:Verdana,Geneva,Tahoma,sans-serif;font-size:16px;line-height:1.7;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+a{color:var(--link)}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.mono{font-family:"Courier New",Consolas,Menlo,monospace}
+
+header{max-width:760px;margin:24px auto 0;padding:0 16px}
+.term{background:var(--ink);color:var(--mint);border:2px solid var(--ink);box-shadow:6px 6px 0 var(--lav);padding:22px 20px}
+.term .bar{font-size:.8rem;color:var(--lav);margin-bottom:14px}
+.term h1{margin:0;font-size:2rem;line-height:1.2;font-weight:700;color:#fff}
+.term p{margin:8px 0 0;color:var(--sky)}
+.cur{display:inline-block;width:.6em;height:1em;background:var(--mint);vertical-align:-2px;margin-left:4px;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.cur{animation:none}html{scroll-behavior:auto}}
+
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;max-width:760px;margin:16px auto 0;padding:8px 16px;display:flex;flex-wrap:wrap;gap:6px;background:var(--bg)}
+nav a{font-family:"Courier New",Consolas,Menlo,monospace;font-size:.82rem;color:var(--ink);text-decoration:none;background:#fff;border:2px solid var(--ink);padding:2px 9px;box-shadow:2px 2px 0 var(--ink)}
+nav a:hover{background:var(--lemon)}
+nav a:active{box-shadow:none;transform:translate(2px,2px)}
+
+main{max-width:760px;margin:0 auto;padding:8px 16px 40px}
+.win{background:#fff;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);margin:26px 0}
+.win .tb{display:flex;align-items:center;justify-content:space-between;padding:6px 10px;border-bottom:2px solid var(--ink);font-family:"Courier New",Consolas,Menlo,monospace;font-weight:700;font-size:.9rem}
+.win .tb i{display:flex;gap:5px}
+.win .tb i b{width:12px;height:12px;background:#fff;border:2px solid var(--ink);display:block}
+.win .in{padding:6px 20px 20px}
+.mint .tb{background:var(--mint)} .lav .tb{background:var(--lav)} .pink .tb{background:var(--pink)}
+.sky .tb{background:var(--sky)} .peach .tb{background:var(--peach)} .lemon .tb{background:var(--lemon)}
+h2{font-family:"Courier New",Consolas,Menlo,monospace;font-size:1.35rem;margin:16px 0 8px}
+h3{font-size:1rem;margin:16px 0 4px}
+ul{padding-left:22px;margin:8px 0}
+li{margin:6px 0}
+li::marker{color:var(--link)}
+
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.box{border:2px solid var(--ink);padding:4px 16px 10px}
+.box h3{margin-top:10px;font-family:"Courier New",Consolas,Menlo,monospace}
+.box.do{background:#e6fbf4}
+.box.dont{background:#fff0f7}
+.cta{background:var(--lemon);border:2px dashed var(--ink);padding:6px 18px;margin:12px 0}
+.say{font-family:"Courier New",Consolas,Menlo,monospace;font-weight:700}
+
+footer{max-width:760px;margin:0 auto 24px;padding:0 16px;text-align:center;font-size:.85rem}
+@media(max-width:600px){.cols{grid-template-columns:1fr}.term h1{font-size:1.5rem}.win{box-shadow:4px 4px 0 var(--ink)}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="term mono">
+    <div class="bar">C:\ICT\awareness&gt;</div>
+    <h1>ICT Awareness<span class="cur" aria-hidden="true"></span></h1>
+    <p>Learn what ICT is, why it matters, and how to use it safely and responsibly.</p>
+  </div>
+</header>
+
+<nav aria-label="Page sections">
+  <a href="#definition">definition</a>
+  <a href="#benefits">benefits</a>
+  <a href="#importance">importance</a>
+  <a href="#safety">safety</a>
+  <a href="#risks">risks</a>
+  <a href="#how">how-to</a>
+  <a href="#dos">do's &amp; don'ts</a>
+  <a href="#action">action</a>
+  <a href="#sources">sources</a>
+</nav>
+
+<main>
+
+<section id="definition" class="win mint">
+  <div class="tb"><span>definition.txt</span><i><b></b><b></b><b></b></i></div>
+  <div class="in">
+    <h2>📌 Definition</h2>
+    <p>ICT stands for Information and Communication Technology. It refers to all digital technologies and tools used to collect, store, process, share, and exchange information. It includes computers, the internet, mobile phones, software, social media, and communication networks that help people access and send information quickly and easily.</p>
+
+    <h3>⚠️ Awareness for Using ICT</h3>
+    <ul>
+      <li>Protect your personal information and privacy online</li>
+      <li>Verify information before sharing — avoid spreading fake news</li>
+      <li>Be respectful and kind; never bully or hurt others online</li>
+      <li>Use strong passwords and keep your accounts secure</li>
+      <li>Balance screen time with other important activities</li>
+      <li>Follow laws and rules — do not copy or use others' work without permission</li>
+      <li>Be careful when clicking links or downloading files</li>
+    </ul>
+  </div>
+</section>
+
+<section id="benefits" class="win sky">
+  <div class="tb"><span>benefits.exe</span><i><b></b><b></b><b></b></i></div>
+  <div class="in">
+    <h2>✅ Benefits of ICT</h2>
+    <ul>
+      <li>Gives instant access to information and learning materials</li>
+      <li>Makes communication fast and easy, anywhere in the world</li>
+      <li>Supports education through online classes and research</li>
+      <li>Saves time — easier shopping, banking, and getting services</li>
+      <li>Helps people work, earn, and run businesses remotely</li>
+      <li>Connects people and builds communities across distances</li>
+      <li>Makes daily tasks simpler and more efficient</li>
+    </ul>
+  </div>
+</section>
+
+<section id="importance" class="win lav">
+  <div class="tb"><span>importance.doc</span><i><b></b><b></b><b></b></i></div>
+  <div class="in">
+    <h2>Importance of ICT</h2>
+    <p>ICT is part of almost everything we do today. Schools, offices, hospitals, banks, and government offices all rely on it to run. Knowing how to use ICT well is now a basic life skill, just like reading and writing.</p>
+    <ul>
+      <li><b>In education:</b> students can research, study, and learn from teachers online.</li>
+      <li><b>At work:</b> ICT skills help people find jobs, work faster, and stay connected with teams.</li>
+      <li><b>In business:</b> companies use ICT to sell products, keep records, and reach more customers.</li>
+      <li><b>In daily life:</b> we use it to message family, pay bills, find directions, and get news.</li>
+      <li><b>In emergencies:</b> it helps spread warnings and get help quickly.</li>
+    </ul>
+    <p>Because we depend on ICT so much, being aware of how to use it properly protects us and the people around us.</p>
+  </div>
+</section>
+
+<section id="safety" class="win mint">
+  <div class="tb"><span>safety_tips.sys</span><i><b></b><b></b><b></b></i></div>
+  <div class="in">
+    <h2>Safety Tips</h2>
+    <ul>
+      <li>Use a different strong password for each account. Mix letters, numbers, and symbols.</li>
+      <li>Turn on two-step verification (a code sent to your phone) wherever you can.</li>
+      <li>Keep your phone, computer, and apps updated.</li>
+      <li>Install antivirus software and only download apps from official stores.</li>
+      <li>Think before you click. Check who sent a message before opening links or attachments.</li>
+      <li>Do not share passwords, ID numbers, or bank details with anyone online.</li>
+      <li>Use private Wi-Fi when possible. Avoid banking or logging into important accounts on public Wi-Fi.</li>
+      <li>Check your privacy settings on social media so only people you trust can see your posts.</li>
+      <li>Back up important files so you do not lose them.</li>
+      <li>Tell a parent, teacher, or trusted adult if something online makes you uncomfortable.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="risks" class="win pink">
+  <div class="tb"><span>warning_risks.log</span><i><b></b><b></b><b></b></i></div>
+  <div class="in">
+    <h2>Risks of ICT</h2>
+    <p>ICT is useful, but it also comes with risks that everyone should know about.</p>
+    <ul>
+      <li><b>Scams and phishing:</b> fake emails, texts, or websites that trick you into giving away personal or money information.</li>
+      <li><b>Malware and viruses:</b> harmful software that can damage your device, steal data, or lock your files.</li>
+      <li><b>Identity theft:</b> criminals using your personal details to pretend to be you.</li>
+      <li><b>Data breaches:</b> private information leaked when an account or system is hacked.</li>
+      <li><b>Cyberbullying:</b> being harassed, shamed, or threatened online.</li>
+      <li><b>Fake news:</b> false information that spreads quickly and misleads people.</li>
+      <li><b>Privacy loss:</b> oversharing can reveal where you live, study, or spend your time.</li>
+      <li><b>Overuse:</b> too much screen time can affect sleep, health, studies, and relationships.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="how" class="win peach">
+  <div class="tb"><span>how_to_use_ict.bat</span><i><b></b><b></b><b></b></i></div>
+  <div class="in">
+    <h2>How to Use ICT</h2>
+    <h3>For learning</h3>
+    <p>Use trusted websites and official learning platforms for research. Compare more than one source, and always give credit when you use someone else's work.</p>
+    <h3>For communication</h3>
+    <p>Use email, messaging apps, and video calls to stay in touch. Be polite, think before you post, and do not send messages when you are angry.</p>
+    <h3>For work and projects</h3>
+    <p>Use word processors, spreadsheets, and presentation tools to organize your work. Save often and keep backups.</p>
+    <h3>For daily tasks</h3>
+    <p>Use online banking, shopping, and government services only on official websites and apps. Look for the padlock in the address bar and check the web address carefully.</p>
+    <h3>For entertainment</h3>
+    <p>Enjoy games, music, and videos in moderation. Follow age limits and do not download pirated content.</p>
+  </div>
+</section>
+
+<section id="dos" class="win lav">
+  <div class="tb"><span>dos_and_donts.cfg</span><i><b></b><b></b><b></b></i></div>
+  <div class="in">
+    <h2>Do's and Don'ts</h2>
+    <div class="cols">
+      <div class="box do">
+        <h3>✔ Do</h3>
+        <ul>
+          <li>Use strong, unique passwords</li>
+          <li>Log out when using shared computers</li>
+          <li>Verify information before sharing it</li>
+          <li>Be kind and respectful online</li>
+          <li>Keep your software updated</li>
+          <li>Respect copyright and give credit</li>
+          <li>Report cyberbullying and suspicious activity</li>
+          <li>Take breaks from screens</li>
+        </ul>
+      </div>
+      <div class="box dont">
+        <h3>✘ Don't</h3>
+        <ul>
+          <li>Share passwords or personal details</li>
+          <li>Click unknown links or open strange attachments</li>
+          <li>Spread rumors or fake news</li>
+          <li>Bully, insult, or embarrass others</li>
+          <li>Download pirated or unsafe files</li>
+          <li>Talk privately with strangers online</li>
+          <li>Post private photos or location details</li>
+          <li>Use ICT to cheat or break the law</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="action" class="win lemon">
+  <div class="tb"><span>call_to_action.run</span><i><b></b><b></b><b></b></i></div>
+  <div class="in">
+    <h2>Call to Action</h2>
+    <p>ICT is a powerful tool, and it is up to each of us to use it wisely. Start today:</p>
+    <div class="cta">
+      <ul>
+        <li>Change any weak or repeated passwords you have.</li>
+        <li>Check the privacy settings on your social media accounts.</li>
+        <li>Think twice before you share or forward any message.</li>
+        <li>Share these tips with your family and friends.</li>
+      </ul>
+    </div>
+    <p class="say">Be aware. Be safe. Be responsible.</p>
+  </div>
+</section>
+
+<section id="sources" class="win sky">
+  <div class="tb"><span>sources.txt</span><i><b></b><b></b><b></b></i></div>
+  <div class="in">
+    <h2>Sources</h2>
+    <ul>
+      <li><a href="https://www.business.qld.gov.au/running-business/digital-business/online-risk-security/risk" target="_blank" rel="noopener">Queensland Government — Online risk and security: Risk</a></li>
+      <li><a href="https://www.techtarget.com/it-strategy/definition/What-is-ICT-information-and-communications-technology" target="_blank" rel="noopener">TechTarget — What is ICT (information and communications technology)?</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="mono">ICT Awareness &mdash; for learning purposes</footer>
+
+</body>
+</html>
